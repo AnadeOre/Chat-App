@@ -1,0 +1,41 @@
+.background {
+	background-color: #4d4d4e;
+}
+
+.chat-bg {
+	background-color: #3e3e3f;
+}
+
+.btn-primary,
+.btn-primary:visited {
+	background-color: #703bc0 !important;
+	border: #703bc0 !important;
+	border-radius: 4px !important;
+}
+.btn-primary:hover,
+.btn-primary:active {
+	background-color: #7d5ab1 !important;
+}
+
+.mutedText {
+	color: rgba(255, 255, 255, 0.712);
+}
+
+.my-message {
+	background-color: #703bc0 !important;
+}
+
+.other-message {
+	background-color: #b09ad3 !important;
+}
+
+.margin-right-you {
+	margin-right: 15px;
+}
+
+.sidebar {
+	background-color: #4d4d4e;
+	width: 250px;
+	margin-left: -120px;
+	padding: 10px;
+}

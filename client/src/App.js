@@ -9,15 +9,13 @@ import PrivateRoute from './Components/PrivateRoute';
 import ForgotPassword from './Components/ForgotPassword'
 import UpdateProfile from './Components/UpdateProfile';
 import Chat from './Components/Chat'
-
+import './App.css'
 
 function App() {
 
   return (
 
-    <Container
-
-    >
+    <Container className='background'>
       <div >
         <Router>
           <AuthProvider>
