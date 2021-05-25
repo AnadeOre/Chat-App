@@ -67,7 +67,11 @@ export default function UpdateProfile() {
 						<Form onSubmit={handleSubmit}>
 							<Form.Group id='username'>
 								<Form.Label>Username</Form.Label>
-								<Form.Control type='name' ref={usernameRef} />
+								<Form.Control
+									placeholder='Leave blank to not update'
+									type='name'
+									ref={usernameRef}
+								/>
 							</Form.Group>
 							<Form.Group id='email'>
 								<Form.Label>Email</Form.Label>
@@ -97,7 +101,7 @@ export default function UpdateProfile() {
 
 							<Form.Group id='picture'>
 								<Form.Label>Profile Picture</Form.Label>
-								<Form.Control type='name' ref={picRef} />
+								<Form.Control placeholder='URL to picture' type='name' ref={picRef} />
 							</Form.Group>
 							<Button disabled={loading} className='w-100 mt-2' type='submit'>
 								Update
@@ -106,7 +110,9 @@ export default function UpdateProfile() {
 					</Card.Body>
 				</Card>
 				<div className='w-100 text-center mt-2'>
-					<Link to='/'>Cancel</Link>
+					<Link className='linkinBlack' to='/'>
+						Cancel
+					</Link>
 				</div>
 			</div>
 		</Container>

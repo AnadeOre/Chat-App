@@ -25,17 +25,27 @@ export default function Dashboard() {
 			<div className='w-100' style={{ maxWidth: '400px' }}>
 				<Card>
 					<Card.Body>
-						<h2 className='text-center mb-4'>Profile</h2>
-						{error && <Alert variant='danger'>{error}</Alert>}
-						<strong>Email: </strong>
-						{currentUser.email}
-						<br />
-						<strong>User ID: </strong>
-						{currentUser.uid}
-						<strong>Username: </strong>
-						{currentUser.displayName}
-						<br />
-						<img src={currentUser.photoURL} width='200' height='200px' />
+						<div>
+							<h2 className='text-center mb-4'>Profile</h2>
+							{error && <Alert variant='danger'>{error}</Alert>}
+							<strong>Email: </strong>
+							{currentUser.email}
+						</div>
+						<div>
+							<strong>User ID: </strong>
+							{currentUser.uid}
+						</div>
+						<div>
+							<strong>Username: </strong>
+							{currentUser.displayName}
+						</div>
+						<img
+							alt='Profile Pic'
+							className='profPic'
+							src={currentUser.photoURL}
+							width='200'
+							height='200px'
+						/>
 						<Link to='/update-profile' className='btn btn-primary w-100 mt-3'>
 							Update Profile
 						</Link>
@@ -45,7 +55,7 @@ export default function Dashboard() {
 					</Card.Body>
 				</Card>
 				<div className='w-100 text-center mt-2'>
-					<Button variant='link' onClick={handleLogOut}>
+					<Button className='linkinBlack' variant='link' onClick={handleLogOut}>
 						Log out
 					</Button>
 				</div>

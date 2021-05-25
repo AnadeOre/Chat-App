@@ -1,32 +1,43 @@
 .background {
-	background-color: #4d4d4e;
+	background-color: #414142;
 }
 
 .chat-bg {
-	background-color: #3e3e3f;
+	background-color: #414142;
 }
 
 .btn-primary,
 .btn-primary:visited {
-	background-color: #703bc0 !important;
-	border: #703bc0 !important;
+	background-color: #397483 !important;
+	border: #397483 !important;
 	border-radius: 4px !important;
+	outline: none !important;
 }
+
+.btn-primary:focus,
 .btn-primary:hover,
 .btn-primary:active {
-	background-color: #7d5ab1 !important;
+	background-color: #32899e !important;
+	outline: none !important;
 }
 
 .mutedText {
 	color: rgba(255, 255, 255, 0.712);
 }
+.idText {
+	font-size: 10px;
+}
+
+.smallText {
+	font-size: 13px;
+}
 
 .my-message {
-	background-color: #703bc0 !important;
+	background-color: #32899e !important;
 }
 
 .other-message {
-	background-color: #b09ad3 !important;
+	background-color: #42aac4 !important;
 }
 
 .margin-right-you {
@@ -34,8 +45,48 @@
 }
 
 .sidebar {
-	background-color: #4d4d4e;
+	background-color: #4c4c4d;
 	width: 250px;
 	margin-left: -120px;
 	padding: 10px;
+}
+
+.chat-box {
+	height: 50px;
+	resize: none;
+	font-size: 18px !important;
+	border: 2px #42aac4 !important;
+}
+
+.chat-box:focus {
+	outline: none !important;
+}
+
+.chat-enter {
+	height: 50px;
+}
+
+.linkinBlack {
+	color: #397483 !important;
+}
+
+.linkinBlack:hover {
+	color: #42aac4 !important;
+}
+
+.linkinWhite {
+	color: #397483 !important;
+}
+
+.linkinWhite:hover {
+	color: #42aac4 !important;
+}
+
+.tabLink {
+	color: #397483 !important;
+}
+
+.profPic {
+	display: flex;
+	margin: auto;
 }

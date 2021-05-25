@@ -68,13 +68,14 @@ export default function Chat() {
 									}`}>
 									<div className={`d-flex ${message.userId === Id ? '' : 'flex-row-reverse'} `}>
 										<div
-											className={`rounded px-2 py-1 m-2 ${
-												message.userId === Id ? 'my-message text-white' : 'other-message'
+											className={`rounded px-2 py-1 m-2 text-white ${
+												message.userId === Id ? 'my-message' : 'other-message'
 											}`}>
 											{message.text}
 										</div>
 										<div>
 											<img
+												alt='Profile Pic'
 												src={message.userPic}
 												width='60px'
 												height='60px'
@@ -97,14 +98,13 @@ export default function Chat() {
 					<Form.Group className='m-3'>
 						<InputGroup>
 							<Form.Control
-								as='textarea'
 								required
 								value={text}
 								onChange={e => setText(e.target.value)}
-								style={{ height: '75px', resize: 'none' }}
+								className='chat-box'
 							/>
 							<InputGroup.Append>
-								<Button type='submit' style={{ height: '75px' }}>
+								<Button className='chat-enter' type='submit'>
 									Send
 								</Button>
 							</InputGroup.Append>

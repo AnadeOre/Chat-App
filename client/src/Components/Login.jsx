@@ -1,12 +1,11 @@
 import React, { useRef, useState } from 'react';
 import { Form, Button, Card, Alert, Container } from 'react-bootstrap';
-import { useAuth } from '../Context/AuthContext';
 import { Link, useHistory } from 'react-router-dom';
+import { auth } from '../firebase';
 
 export default function Login() {
 	const emailRef = useRef();
 	const passwordRef = useRef();
-	const { login } = useAuth();
 	const [error, setError] = useState('');
 	const [loading, setLoading] = useState(false);
 	const history = useHistory();
@@ -17,12 +16,12 @@ export default function Login() {
 		try {
 			setError('');
 			setLoading(true);
-			await login(emailRef.current.value, passwordRef.current.value);
-
+			await auth.signInWithEmailAndPassword(emailRef.current.value, passwordRef.current.value);
 			history.push('/');
 		} catch {
-			setError('Failed to sign in');
+			setError('Failed to log in');
 		}
+
 		setLoading(false);
 	}
 
@@ -51,12 +50,17 @@ export default function Login() {
 							</Button>
 						</Form>
 						<div className='w-100 text-center mt-3'>
-							<Link to='/forgot-password'>Forgot password?</Link>
+							<Link className='linkinWhite' to='/forgot-password'>
+								Forgot password?
+							</Link>
 						</div>
 					</Card.Body>
 				</Card>
-				<div className='w-100 text-center mt-2'>
-					Need an account? <Link to='/signup'>Sign up</Link>
+				<div className='w-100 text-center text-white mt-2'>
+					Need an account?{' '}
+					<Link className='linkinBlack' to='/signup'>
+						Sign up
+					</Link>
 				</div>
 			</div>
 		</Container>
