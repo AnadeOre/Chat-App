@@ -2,7 +2,7 @@
 
 # React Chat App
 
-Still under development.
+Still under development. Check out the Proyect [here](https://github.com/Uklizdev/Chat-App/projects/1).
 
 ### Todos
 
