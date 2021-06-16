@@ -6,11 +6,11 @@ Still under development. Check out the Proyect [here](https://github.com/Uklizde
 
 ### Todos
 
-- Add button in chat to go to profile.
-- Set default profile picture.
-- Improve design in general (colors, display).
-- Add contacts with ID.
-- Allow private messages between contacs.
+- [x] Add button in chat to go to profile.
+- [ ] Set default profile picture.
+- [ ] Improve design in general (colors, display).
+- [ ] Add contacts with ID.
+- [ ] Allow private messages between contacs.
 
 ## Live version
 
