@@ -22,7 +22,7 @@ This webApp is using [Firebase](https://firebase.google.com/) as authentication 
 
 ## Contributing 🖇️
 
-Any contributions are highly appreciated. There are two things you can do, read the [contributing guidelines](https://github.com/Uklizdev/Chat-App/blob/master/CONTRIBUTING.md) for more info!
+Any contributions are highly appreciated. Read the [contributing guidelines](https://github.com/Uklizdev/Chat-App/blob/master/CONTRIBUTING.md) for more info!
 
 ## License 📄
 
